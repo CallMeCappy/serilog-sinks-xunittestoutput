@@ -1,12 +1,13 @@
-﻿namespace Serilog
-{
-    using Serilog.Configuration;
-    using Serilog.Events;
-    using Serilog.Formatting.Display;
-    using Serilog.Sinks.XunitTestOutput;
-    using System;
-    using Xunit.Abstractions;
+﻿using Serilog.Configuration;
+using Serilog.Events;
+using Serilog.Formatting.Display;
+using Serilog.Sinks.XunitTestOutput;
+using System;
+using Xunit.Abstractions;
 
+// ReSharper disable once CheckNamespace
+namespace Serilog
+{
     /// <summary>
     /// Adds the WriteTo.XunitTestOutput(output) extension method to <see cref="LoggerConfiguration"/>.
     /// </summary>
@@ -18,7 +19,7 @@
         /// Adds a sink that writes log events to the output of an xUnit test.
         /// </summary>
         /// <param name="loggerConfiguration">The logger configuration.</param>
-        /// <param name="testOutputHelper">Xunit <see cref="TestOutputHelper"/> that writes to test output</param>
+        /// <param name="testOutputHelper">Xunit <see cref="Xunit.Sdk.TestOutputHelper"/> that writes to test output</param>
         /// <param name="restrictedToMinimumLevel">The minimum log event level required in order to write an event to the sink.</param>
         /// <param name="outputTemplate">Message template describing the output format.</param>
         /// <param name="formatProvider">Supplies culture-specific formatting information, or null.</param>
