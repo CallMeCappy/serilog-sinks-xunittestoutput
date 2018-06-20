@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2018
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serilog.Sinks.XunitTestOutput", "src\Serilog.Sinks.XunitTestOutput\Serilog.Sinks.XunitTestOutput.csproj", "{76555941-5821-458C-9153-E418F482139E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serilog.Sinks.XunitTestOutput", "src\Serilog.Sinks.XunitTestOutput\Serilog.Sinks.XunitTestOutput.csproj", "{76555941-5821-458C-9153-E418F482139E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "playground", "src\playground\playground.csproj", "{F1F8DCE1-B579-464A-873A-59E0695042BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serilog.Sinks.XunitTestOutput.Tests", "src\playground\Serilog.Sinks.XunitTestOutput.Tests.csproj", "{F1F8DCE1-B579-464A-873A-59E0695042BE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,5 +24,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A1CC2011-4770-41B2-BF60-48304A6772AD}
 	EndGlobalSection
 EndGlobal
